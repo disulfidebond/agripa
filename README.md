@@ -23,9 +23,11 @@ The format option will reformat the GTF file as a GFF version 3 file.  The first
 
 homology -i FILENAME.GTF -i FILENAME.fasta -o FILENAME.GFF
 The homology option will conduct recursive homology for the desired organism with Homo sapiens.  The first -i argument must be the organism annotation gene list file, and the second -i argument must be the organism *multi-fasta* rna fasta file (important: this is different, and not the same as a nucleotide fasta file, and has the format:
-  >geneName Description (name)
-  AATGAGACCTA...
-This file is *required*, but can be downloaded from ensemble or ncbi, and is usually called an rna fasta file.
+     
+     >geneName Description (name) Description
+     AATGAGACCTAAATGAGACCTAAATGAGACCTAAATGAGACCTA
+
+Note: This file is *required*, but can be downloaded from ensemble or ncbi, and is usually called an rna fasta file.
 The -o option is required, and is the output unique file name for the homologous list of genes.
 
 merge -i ORGANISM1.GTF -i ORGANISM1.FASTA -i ORGANISM2.GTF -i ORGANISM2.FASTA -o FILENAME.GTF
