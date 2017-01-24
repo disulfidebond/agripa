@@ -85,7 +85,8 @@ def retrieveStringFromFastaWithIndex(c):
     # query -> catfish, the query for the subject
     #     the result from the subject BLAST 
     #     is BLASTed as a reciprocal search against catfish
-    f = 'GCF_000002035.5_GRCz10_rna.fna'
+    # UPDATE2: Nevermind.  This function is *only* used by the query, not the subject
+    f = 'GCF_001660625.1_IpCoco_1.2_rna.fna'
     with open(f) as fasta:
         for i in fasta:
             m = re.match(p, i)
@@ -296,8 +297,8 @@ def main():
     gFileIn = args.input
 #    gList = listOfGeneNames('geneList_Catfish.csv')
     gList = listOfGeneNames(gFileIn)
-    subjectDB = 'Danio_rerio'
-#    subjectDB = 'Human'
+#    subjectDB = 'Danio_rerio'
+    subjectDB = 'Human'
     queryDB = 'CatfishGene'
     resList = pyBLAST_recursive(gList, l_dict_query, l_tupleDict_query, subjectDB, queryDB)
     xLen = len(resList)
