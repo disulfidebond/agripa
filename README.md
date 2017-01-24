@@ -36,5 +36,5 @@ Note: only two files can be merged at a time with this release.
 
 #####
 The Homology update adds additional functionality to do homology searches and matching.  It is still in development.
-NOTE: This branch must be merged with the zebrafish branch before merging with the main branch
+NOTE: This branch must be merged with the Homo Sapiens branch before merging with the main branch
 
