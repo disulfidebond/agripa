@@ -297,8 +297,8 @@ def main():
     gFileIn = args.input
 #    gList = listOfGeneNames('geneList_Catfish.csv')
     gList = listOfGeneNames(gFileIn)
-    subjectDB = 'Danio_rerio'
-#    subjectDB = 'Human'
+#    subjectDB = 'Danio_rerio'
+    subjectDB = 'Human'
     queryDB = 'CatfishGene'
     resList = pyBLAST_recursive(gList, l_dict_query, l_tupleDict_query, subjectDB, queryDB)
     xLen = len(resList)
