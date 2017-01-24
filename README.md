@@ -33,3 +33,7 @@ The -o option is required, and is the output unique file name for the homologous
 merge -i ORGANISM1.GTF -i ORGANISM1.FASTA -i ORGANISM2.GTF -i ORGANISM2.FASTA -o FILENAME.GTF
 The merge option merges gtf annotation files from the annotation files of two organisms.  The first -i option must be the organism annotation gene list file as a GTF format, and the second -i argument must be the organism fasta file.  The third -i argument must be the next organism annotation file list as a GTF format that will be merged to the first organism, and the fourth -i argument must be the next organism fasta file.  The -o option is the resulting unique output file name.
 Note: only two files can be merged at a time with this release.
+
+#####
+The Homology update adds additional functionality to do homology searches and matching.  It is still in development.
+
